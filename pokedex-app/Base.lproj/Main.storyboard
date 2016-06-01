@@ -9,6 +9,9 @@
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
         </mutableArray>
+        <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -28,8 +31,22 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22G-gl-L3Q">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y66-Rp-iXJ">
+                                        <rect key="frame" x="201" y="8" width="199" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="199" id="KY4-xs-wzb"/>
+                                            <constraint firstAttribute="height" constant="39" id="Yj6-Za-OnP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Y66-Rp-iXJ" firstAttribute="centerY" secondItem="22G-gl-L3Q" secondAttribute="centerY" id="cxv-0D-869"/>
+                                    <constraint firstItem="Y66-Rp-iXJ" firstAttribute="centerX" secondItem="22G-gl-L3Q" secondAttribute="centerX" id="wqn-F3-ZCP"/>
                                     <constraint firstAttribute="height" constant="55" id="zHt-fH-3Yi"/>
                                 </constraints>
                             </view>
