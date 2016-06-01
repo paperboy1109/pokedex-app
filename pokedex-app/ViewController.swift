@@ -78,6 +78,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
 
 
+    @IBAction func musicBtnTapped(sender: AnyObject) {
+    }
 
 
 }
